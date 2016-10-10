@@ -1,6 +1,6 @@
-<div *ngFor="let item of Planets" (click)="ShowPlanetDistance(item.PlanetId)">
-    {{item.Name}}
+<div *ngFor="let item of Planets" (click)="ShowPlanetDistance(item.PlanetId)" >
+   <p> {{item.Name}}</p>
     <div *ngIf="item.DisplayDistance"  >
-       {{item.Distance}} km from Sun
+       {{item.Distance  | number }} km from Sun
     </div>
 </div>
