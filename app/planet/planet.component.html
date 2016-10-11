@@ -1,6 +1,11 @@
-<div *ngFor="let item of Planets" (click)="ShowPlanetDistance(item.PlanetId)" >
-   <p> {{item.Name}}</p>
-    <div *ngIf="item.DisplayDistance"  >
-       {{item.Distance  | number }} km from Sun
-    </div>
+
+<div *ngFor="let item of Planets" (click)="ShowPlanetDistance(item.PlanetId)">
+	<p> {{item.Name}}</p>
+	<div *ngIf="item.DisplayDistance">
+		{{item.Distance | number }} km from Sun
+	</div>
 </div>
+<div *ngIf="ShowError">
+Thier is some thing wrong happend 
+</div>
+

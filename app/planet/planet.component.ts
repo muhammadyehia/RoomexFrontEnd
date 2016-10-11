@@ -12,15 +12,21 @@ export class PlanetComponent implements OnInit {
     constructor(private _planetService: PlanetService) {
         this.Planets = [];
         this._selectedPlanetIndex = -1;
+         this.ShowError=false;
     }
+    public ShowError:boolean;
     private _selectedPlanetIndex: number;
     public Planets: Planet[];
     ngOnInit() {
         this._planetService.GetPlanets().subscribe((planetsResult: IPlanet[]) => {
+            
             for (var item of planetsResult) {
                 this.Planets.push(new Planet(item));
             }
-        });
+        },((error)=>{
+            this.ShowError=true;
+            console.log(error);
+        }));
     }
     ShowPlanetDistance(planetId: string) {
         let found: boolean = false;
