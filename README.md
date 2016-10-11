@@ -13,7 +13,10 @@ Older versions produce errors.
 
 We recommend [nvm](https://github.com/creationix/nvm) for managing multiple versions of node and npm.
 
+## Important Step
 
+ **Copy Request URL you will use it in RoomexFrontEnd app replace it with the _url in RoomexFrontEnd/app/planet/planet.service.ts**
+ 
 ## Install npm packages
 
 > See npm and nvm version notes above
