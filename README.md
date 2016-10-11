@@ -15,7 +15,7 @@ We recommend [nvm](https://github.com/creationix/nvm) for managing multiple vers
 
 ## Important Step
 
- **Copy Request URL you will use it in RoomexFrontEnd app replace it with the _url in RoomexFrontEnd/app/planet/planet.service.ts**
+ **Copy Request URL From  RoomexBackend Documentaion link replace it with the _url in RoomexFrontEnd/app/planet/planet.service.ts**
  
 ## Install npm packages
 
